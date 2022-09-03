@@ -1,0 +1,116 @@
+{
+    "catalogo": [
+        {
+            "CatalogueName": "Pets_ID",
+            "CategoryName": "Pet Plate Gato",
+            "DeviceName": "PET_11",
+            "ID_Device": 18,
+            "Id_Catalogue": 3,
+            "Id_Category": 1,
+            "Id_Product": 31,
+            "ProductData": "0",
+            "ProductName": "Placa Gato Mini Rosado",
+            "ProductPicture": "https://d2j6dbq0eux0bg.cloudfront.net/images/67015276/2659641715.jpg",
+            "ProductPrice": "16000"
+        },
+        {
+            "CatalogueName": "Pets_ID",
+            "CategoryName": "Pet Plate Perro",
+            "DeviceName": "PET_11",
+            "ID_Device": 18,
+            "Id_Catalogue": 3,
+            "Id_Category": 2,
+            "Id_Product": 32,
+            "ProductData": "0",
+            "ProductName": "Placa Hueso Grande Rosado",
+            "ProductPicture": "https://d2j6dbq0eux0bg.cloudfront.net/images/67015276/2659991597.jpg",
+            "ProductPrice": "16000"
+        },
+        {
+            "CatalogueName": "Pets_ID",
+            "CategoryName": "Pet Plate Perro",
+            "DeviceName": "PET_11",
+            "ID_Device": 18,
+            "Id_Catalogue": 3,
+            "Id_Category": 2,
+            "Id_Product": 33,
+            "ProductData": "0",
+            "ProductName": "Placa Hueso Mini Azul",
+            "ProductPicture": "https://d2j6dbq0eux0bg.cloudfront.net/images/67015276/2659987087.jpg",
+            "ProductPrice": "16000"
+        },
+        {
+            "CatalogueName": "Pets_ID",
+            "CategoryName": "Pet Plate Gato",
+            "DeviceName": "PET_11",
+            "ID_Device": 18,
+            "Id_Catalogue": 3,
+            "Id_Category": 3,
+            "Id_Product": 34,
+            "ProductData": "0",
+            "ProductName": "Placa Coraz\u00f3n Rojo",
+            "ProductPicture": "https://d2j6dbq0eux0bg.cloudfront.net/images/67015276/2659993186.jpg",
+            "ProductPrice": "16000"
+        },
+        {
+            "CatalogueName": "Pets_ID",
+            "CategoryName": "Pet Plate Gato",
+            "DeviceName": "PET_11",
+            "ID_Device": 18,
+            "Id_Catalogue": 3,
+            "Id_Category": 1,
+            "Id_Product": 35,
+            "ProductData": "0",
+            "ProductName": "Placa Gato Mini Azul",
+            "ProductPicture": "https://d2j6dbq0eux0bg.cloudfront.net/images/67015276/2659660445.jpg",
+            "ProductPrice": "16000"
+        },
+        {
+            "CatalogueName": "Pets_ID",
+            "CategoryName": "Pet Plate Perro",
+            "DeviceName": "PET_11",
+            "ID_Device": 18,
+            "Id_Catalogue": 3,
+            "Id_Category": 2,
+            "Id_Product": 36,
+            "ProductData": "0",
+            "ProductName": "Placa Hueso Mini Rosado",
+            "ProductPicture": "https://d2j6dbq0eux0bg.cloudfront.net/images/67015276/2659986506.jpg",
+            "ProductPrice": "16000"
+        },
+        {
+            "CatalogueName": "Pets_ID",
+            "CategoryName": "Pet Plate Perro",
+            "DeviceName": "PET_11",
+            "ID_Device": 18,
+            "Id_Catalogue": 3,
+            "Id_Category": 2,
+            "Id_Product": 37,
+            "ProductData": "0",
+            "ProductName": "Placa Hueso Grande Azul",
+            "ProductPicture": "https://d2j6dbq0eux0bg.cloudfront.net/images/67015276/2659992802.jpg",
+            "ProductPrice": "16000"
+        },
+        {
+            "CatalogueName": "Pets_ID",
+            "CategoryName": "Pet Plate Gato",
+            "DeviceName": "PET_11",
+            "ID_Device": 18,
+            "Id_Catalogue": 3,
+            "Id_Category": 3,
+            "Id_Product": 38,
+            "ProductData": "0",
+            "ProductName": "Placa Coraz\u00f3n Azul",
+            "ProductPicture": "https://i.postimg.cc/dtGn8Jyh/Interfas-Perro-Gato-Placa-Mesa-de-trabajo-1.png",
+            "ProductPrice": "16000"
+        }
+    ],
+
+    "cameras":[{
+       
+        "nombre": "Conductor",
+        "url": "http://192.168.14.108:4747/video"
+
+    }
+    ]
+}

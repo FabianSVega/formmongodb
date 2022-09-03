@@ -1,0 +1,12 @@
+{
+    "Cam1": {
+        "type": "USB",
+        "address": 0
+    },
+
+    "Screen0": {
+        "type": "SCR",
+        "address": 0
+
+    }
+}

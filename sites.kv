@@ -1,0 +1,95 @@
+Screen:
+    name: 'sites'
+
+    MDCard:
+        id: login_card
+        orientation: 'vertical'
+        size_hint: 0.5, 0.9
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        elevation: 10
+        radius:25
+        line_color:(0.2, 0.2, 0.2, 0.8)
+        padding: 25
+        spacing: 25
+
+        MDLabel:
+            id:name
+            text:'Sites main'
+            font_style:'H3'
+            bold:True
+            halign:'center'
+
+        MDTextFieldRound:
+            id: username
+            hint_text: "username"
+            icon_right: "nombre completo"
+            size_hint_x: 0.6
+            font_size: 10
+            pos_hint: {"center_x": 0.5}
+
+        MDTextFieldRound:
+            id: id
+            hint_text: "id"
+            size_hint_x: 0.6
+            font_size: 10
+            pos_hint: {"center_x": 0.5}
+            #password: True
+            icon_right:"key"
+        MDTextFieldRound:
+            id: country
+            hint_text: "pais"
+            size_hint_x: 0.6
+            font_size: 10
+            pos_hint: {"center_x": 0.5}
+            #password: True
+            icon_right:"key"
+        MDTextFieldRound:
+            id: city
+            hint_text: "ciudad"
+            size_hint_x: 0.6
+            font_size: 10
+            pos_hint: {"center_x": 0.5}
+            password: True
+            icon_right:"key"
+        MDTextFieldRound:
+            id: postal
+            hint_text: "postal"
+            size_hint_x: 0.6
+            font_size: 10
+            pos_hint: {"center_x": 0.5}
+            password: True
+            icon_right:"key"
+       
+
+        MDGridLayout:
+            cols:2
+            FloatLayout:    
+                MDFillRoundFlatButton:
+                    text: "Regresar"
+                    font_size: 20
+                    pos_hint: {"center_x": 0.5,"center_y": 0.7}
+                #  md_bg_color: (0,0.65,0.65,1)
+                    size_hint: (0.7,0.5)
+                    on_release: app.principal()
+            FloatLayout:        
+                MDFillRoundFlatButton:
+                    text: "Ingresar"
+                    font_size: 20
+                    size_hint: (0.7,0.5)
+                    pos_hint: {"center_x": 0.5,"center_y": 0.7}
+                    on_release: app.sites()
+    MDFloatingActionButtonSpeedDial:
+        data: app.siteskv
+        root_button_anim: True
+        callback: app.form
+
+<RoundedButton@Button>:
+    background_color:(0,0,0,0)
+    background_normal: ""
+    canvas.before:
+        Color:
+            rgba:(0,0.65,0.65,1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [25]    

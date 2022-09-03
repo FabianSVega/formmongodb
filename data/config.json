@@ -1,0 +1,113 @@
+{
+  "version": 2.1,
+  "device": {
+    "id": 5,
+    "Type": 2
+  },
+  "perros": [
+    {
+      
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/Placa Hueso Grande Rosado.png",
+      "amoun": "Placa Hueso Grande Rosado"
+    },
+    {
+      
+
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/Placa Hueso Mini Azul.png",
+      "amoun": "Placa Hueso Mini Azul"
+    },
+    { 
+      
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/Placa Corazon Rojo.png",
+      "amoun": "Placa Corazón Rojo"
+      
+      
+    },
+    { 
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/Placa Hueso Mini Rosado.png",
+      "amoun": "Placa Hueso Mini Rosada"
+      
+    },
+    {
+      
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/Placa Hueso Grande Azul.png",
+      "amoun": "Placa Hueso Grande Azul"
+
+
+    },
+    {
+      
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/Placa Circulo Plateado.png",
+      "amoun": "Placa Corazón Azul"
+
+
+    }
+    
+  ]
+  ,
+  "gatos": [
+    {
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/DATAFONO@100x-8.png",
+      "amoun": "Placa Hueso Grande Rosado"
+    },
+    {
+      
+
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/BANCOLOMBIA@100x-8.png",
+      "amoun": "Placa"
+    },
+    { 
+      
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/BANCOLOMBIA@100x-8.png",
+      "amoun": "Placa"
+      
+      
+    },
+    { 
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/NEQUI@100x-8.png",
+      "amoun": "Placa"
+      
+    },
+    {
+      
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/DATAFONO@100x-8.png",
+      "amoun": "Placar"
+
+
+    },
+    {
+      
+      "enabled": 1,
+      "cuantity":"$16.000",
+      "image": "build/imgs/DATAFONO@100x-8.png",
+      "amoun": "Placar"
+
+
+    }
+    
+  ]
+}
+
+

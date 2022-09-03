@@ -1,0 +1,62 @@
+<Screen>:
+    
+BoxLayout:
+    orientation: 'vertical'
+    canvas.before:
+        Color:
+            rgba: 222/255, 222/255, 222/255,1
+        Rectangle:
+            size: self.size
+            pos:self.pos
+        BorderImage:
+            source:'/build/imgs/'
+
+    MDToolbar:
+        id:Toolbar
+        title: "App of form"
+        color_text:0,0,0,0  
+        md_bg_color:( 26/255, 112/255, 255/255,.8)
+        right_action_items: [["dots-vertical", lambda x: app.callbackm(x)]]
+    MDLabel:
+        id:date
+        md_bg_color:( 26/255, 112/255, 255/255,.8)
+        size_hint_y: .05
+        size_hint_x: .5
+        pos_hint:{'center_x':.5, 'center_y':.9}
+        text:" "
+        halign:'center'
+        font_style:'H6'
+        radius:1,1,25,25
+            
+    
+        
+    ScreenManager:
+        id: sm
+        canvas.before:
+            Color:
+                rgba: 222/255, 222/255, 222/255,1
+            Rectangle:
+                size: self.size
+
+    MDLabel:
+        id:info
+        md_bg_color:( 26/255, 112/255, 255/255,.8)
+        size_hint_y: .07
+        size_hint_x: .7
+        pos_hint:{'center_x':.5, 'center_y':.1}
+        text:" "
+        halign:'center'
+        font_style:'H6'
+        radius:25,25,1,1
+        
+
+   
+
+    
+ 
+        
+        
+        
+
+
+    

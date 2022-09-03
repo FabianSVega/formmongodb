@@ -1,0 +1,44 @@
+MDScreen:
+    name:'token'
+    MDCard:
+        id: login_card
+        orientation: 'vertical'
+        size_hint: 0.5, 0.9
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        elevation: 10
+        radius:25
+        line_color:(0.2, 0.2, 0.2, 0.8)
+        padding: 25
+        spacing: 25
+        
+
+        MDLabel:
+            id:name
+            text:'Datos de usuario'
+            font_style:'H3'
+            bold:True
+            halign:'center'
+
+        MDTextFieldRound:
+            id: username
+            hint_text: "username"
+            icon_right: "nombre completo"
+            size_hint_x: 0.6
+            font_size: 10
+            pos_hint: {"center_x": 0.5}
+
+        MDTextFieldRound:
+            id: email
+            hint_text: "email"
+            size_hint_x: 0.6
+            font_size: 10
+            pos_hint: {"center_x": 0.5}
+            #password: True
+            icon_right:"key"
+        MDTextFieldRound:
+            id: numberp
+            hint_text: "numero de telefono"
+            icon_right: "nombre completo"
+            size_hint_x: 0.6
+            font_size: 10
+            pos_hint: {"center_x": 0.5}
