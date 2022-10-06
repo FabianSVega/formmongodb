@@ -119,7 +119,6 @@ Screen:
 			halign: 'center'
 			size_hint_y: None
 			''')
-        print("print screen")
         self.screens[screenname]	= screen
         print(self.screens[screenname])
         return screen
@@ -205,7 +204,6 @@ Screen:
                                      "tokendate":(tokendata)
                                       })
         print(self.basededatos.find_one({"name":"fabian"}))
-        
         print(self.tokenb)
     
     def principal(self):
