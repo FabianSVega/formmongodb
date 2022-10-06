@@ -7,26 +7,15 @@ import time
 import logging
 import json
 from pymongo                    import MongoClient
-from PIL 						import ImageFont
 from kivy.clock					import Clock
 from kivy.lang					import Builder
 from kivymd.app					import MDApp
 from kivymd 					import images_path
-from kivymd.uix.snackbar		import Snackbar
 from kivy.uix.screenmanager 	import ScreenManager, Screen
 from kivy.core.window 			import Window
 from kivy.uix.image 			import Image as imagen
-from kivymd.uix.button 			import MDFillRoundFlatButton
-from kivymd.uix.card			import MDCard
-from kivymd.uix.label			import MDLabel
-from kivy.uix.image				import AsyncImage
-from kivymd.uix.button			import MDFlatButton, MDRectangleFlatButton, MDRaisedButton,MDRoundFlatButton
-from kivymd.uix.dialog			import MDDialog
 from kivy.uix.boxlayout			import BoxLayout
 from kivy.properties 			import StringProperty
-from kivy.uix.button			import Button
-from kivy.uix.video				import Video
-from kivymd.uix.button          import MDFloatingActionButtonSpeedDial
 from kivymd.uix.menu            import MDDropdownMenu
 from kivymd.uix.floatlayout     import MDFloatLayout
 from kivymd.uix.tab             import MDTabsBase
@@ -68,6 +57,7 @@ class MainApp(MDApp):
             self.go_screen('token')
         elif instance.icon=='city-variant-outline':
             self.go_screen('sites')
+            
     def form(self,instance):
         if instance.icon=='content-save-all':
             print("content-save-all")
@@ -102,7 +92,7 @@ class MainApp(MDApp):
             
         )
         
-        self.settings()
+        
         self.createdbase()
         self.principal()
 
@@ -136,35 +126,21 @@ Screen:
         return screen
 
 
-    def _update_clock(self, dt):	self.root.ids["date"].text	= time.strftime('%Y-%m-%d %H:%M:%S')		 #Actualiza el reloj
-	
-    def settings(self):
-        logging.info("--------------------------------------------------------------------> settings")
-        dir_settings	= os.path.dirname(os.path.realpath(__file__))+'/data/'
-        file_settings	= dir_settings + 'Productos.json'
-        if os.path.exists(dir_settings):
-            if os.path.exists(file_settings):
-                with open(file_settings ) as file:
-                    settings	= json.load(file)
-                    logging.info(json.dumps(settings, indent	= 6))
-                    self.config_catalogo		= settings['catalogo']
-                    self.config_cameras		= settings['cameras']
-                    self.status_settings	= True
-                    print(self.config_cameras)
-            else:	logging.error("SETTINGS NO FOUND")
-        else:	logging.error("DIRECTORY NOT FOUND")
-        logging.info("-------------------------------------------------------------------------------------< settings")
+    def _update_clock(self, dt):	self.root.ids["date"].text	= time.strftime('%Y-%m-%d %H:%M:%S')		 
+    
     def logger(self):
 		#self.root.current = 'user'  # just switch to the other Screen
 		#self.root.ids.hello_user.text = f"Hello {self.root.ids.username.text}"
         self.go_screen('principal')
 
     def logout(self):
-        self.root.current = 'login'  # switch back to the login Screen
+        self.root.current = 'login'  
+        
     def createdbase(self):
         client = MongoClient('localhost')
         self.db= client['testprueba']
         self.basededatos =self.db['products']
+        
     def callbackm(self, button):
         self.menu.caller = button
         self.menu.open()
@@ -231,9 +207,8 @@ Screen:
     
     def principal(self):
         self.go_screen('principal')
-        font = ImageFont.load_default()
+        
         self.root.ids.info.text	= " Bienvenido al sistema de Logeo "
-        #Snackbar(text="PPA FUERA DE SERVICIO").open()
 
 	
 	
